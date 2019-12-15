@@ -9,7 +9,8 @@ import torch
 
 #import helper
 
-import matplotlib.pyplot as plt
+from matplotlib import pyplot as plt
+import cv2
 from torchvision import datasets, transforms
 
 # Define a transform to normalize the data
@@ -26,5 +27,4 @@ print(images.shape)
 print(labels.shape)
 
 plt.imshow(images[1].numpy().squeeze(), cmap='Greys_r')
-plt.show(block=False)
-input('press <ENTER> to continue')
+plt.show()
